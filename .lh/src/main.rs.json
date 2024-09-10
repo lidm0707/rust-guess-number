@@ -1,0 +1,382 @@
+{
+    "sourceFile": "src/main.rs",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 91,
+            "patches": [
+                {
+                    "date": 1725984623734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1725984629248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n \n+\n+\n+use rand::\n fn main() {\n     println!(\"Hello, world!\");\n }\n"
+                },
+                {
+                    "date": 1725984634450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n \n \n-use rand::\n+use rand::Rng;\n fn main() {\n     println!(\"Hello, world!\");\n }\n"
+                },
+                {
+                    "date": 1725984640484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n \n \n use rand::Rng;\n fn main() {\n+    \n     println!(\"Hello, world!\");\n }\n"
+                },
+                {
+                    "date": 1725984646849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n \n \n use rand::Rng;\n fn main() {\n-    \n+    rand\n     println!(\"Hello, world!\");\n }\n"
+                },
+                {
+                    "date": 1725984683297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n \n \n use rand::Rng;\n fn main() {\n-    rand\n+    \n     println!(\"Hello, world!\");\n }\n"
+                },
+                {
+                    "date": 1725984698568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n \n \n use rand::Rng;\n fn main() {\n-    \n+    let rng = rand::thread_rng;\n     println!(\"Hello, world!\");\n }\n"
+                },
+                {
+                    "date": 1725984705797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n \n use rand::Rng;\n fn main() {\n     let rng = rand::thread_rng;\n-    println!(\"Hello, world!\");\n+    println!(\"Hello, world! {}\" , );\n }\n"
+                },
+                {
+                    "date": 1725984767393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n \n \n use rand::Rng;\n fn main() {\n-    let rng = rand::thread_rng;\n-    println!(\"Hello, world! {}\" , );\n+    let rng = rand::thread_rng();\n+    println!(\"Hello, world! {}\");\n }\n"
+                },
+                {
+                    "date": 1725984778661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,7 @@\n \n use rand::Rng;\n fn main() {\n     let rng = rand::thread_rng();\n+    let random_number: u32 = rng.gen_range(1..101);\n     println!(\"Hello, world! {}\");\n }\n"
+                },
+                {
+                    "date": 1725984784289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n use rand::Rng;\n fn main() {\n     let rng = rand::thread_rng();\n     let random_number: u32 = rng.gen_range(1..101);\n-    println!(\"Hello, world! {}\");\n+    println!(\"Hello, world! {}\", random_number);\n }\n"
+                },
+                {
+                    "date": 1725984804466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n \n use rand::Rng;\n fn main() {\n     let rng = rand::thread_rng();\n-    let random_number: u32 = rng.gen_range(1..101);\n+    let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Hello, world! {}\", random_number);\n }\n"
+                },
+                {
+                    "date": 1725984831406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,7 @@\n \n \n use rand::Rng;\n fn main() {\n-    let rng = rand::thread_rng();\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Hello, world! {}\", random_number);\n }\n"
+                },
+                {
+                    "date": 1725984875074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,7 @@\n \n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n+    let \n     println!(\"Hello, world! {}\", random_number);\n }\n"
+                },
+                {
+                    "date": 1725984881100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+\n+\n+\n+use rand::Rng;\n+fn main() {\n+    let random_number: u32 = rand::thread_rng().gen_range(1..101);\n+    let input = \n+    println!(\"Hello, world! {}\", random_number);\n+}\n"
+                },
+                {
+                    "date": 1725984887959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,16 +3,7 @@\n \n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n-    let input = \n+    let input = \"\".to_string()\n     println!(\"Hello, world! {}\", random_number);\n }\n-\n-\n-\n-use rand::Rng;\n-fn main() {\n-    let random_number: u32 = rand::thread_rng().gen_range(1..101);\n-    let \n-    println!(\"Hello, world! {}\", random_number);\n-}\n"
+                },
+                {
+                    "date": 1725984893218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n \n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n-    let input = \"\".to_string()\n+    let input = \"\".to_string();\n     println!(\"Hello, world! {}\", random_number);\n }\n"
+                },
+                {
+                    "date": 1725984904257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,11 @@\n \n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n-    let input = \"\".to_string();\n+    let input: String = \"\".to_string();\n+\n+\n+\n+    \n     println!(\"Hello, world! {}\", random_number);\n }\n"
+                },
+                {
+                    "date": 1725984910387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,12 @@\n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     let input: String = \"\".to_string();\n+    println!(\"Please enter your name:\");\n \n+    \n \n \n-    \n+\n     println!(\"Hello, world! {}\", random_number);\n }\n"
+                },
+                {
+                    "date": 1725984917784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,11 @@\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     let input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n-    \n+    use std::io::stdin()\n+    .read_line(&mut input)  // อ่านข้อมูลเก็บไว้ใน `input`\n+    .expect(\"Failed to read line\");\n \n \n \n     println!(\"Hello, world! {}\", random_number);\n"
+                },
+                {
+                    "date": 1725984923688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+\n+\n+\n+use rand::Rng;\n+fn main() {\n+    let random_number: u32 = rand::thread_rng().gen_range(1..101);\n+    let input: String = \"\".to_string();\n+    println!(\"Please enter your name:\");\n+\n+    std::io::stdin()\n+    .read_line(&mut input)  // อ่านข้อมูลเก็บไว้ใน `input`\n+    .expect(\"Failed to read line\");\n+\n+\n+\n+    println!(\"Hello, world! {}\", random_number);\n+}\n"
+                },
+                {
+                    "date": 1725984939290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,28 +7,11 @@\n     let input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n-    .read_line(&mut input)  // อ่านข้อมูลเก็บไว้ใน `input`\n+    .read_line(&input)  // อ่านข้อมูลเก็บไว้ใน `input`\n     .expect(\"Failed to read line\");\n \n \n \n     println!(\"Hello, world! {}\", random_number);\n }\n-\n-\n-\n-use rand::Rng;\n-fn main() {\n-    let random_number: u32 = rand::thread_rng().gen_range(1..101);\n-    let input: String = \"\".to_string();\n-    println!(\"Please enter your name:\");\n-\n-    use std::io::stdin()\n-    .read_line(&mut input)  // อ่านข้อมูลเก็บไว้ใน `input`\n-    .expect(\"Failed to read line\");\n-\n-\n-\n-    println!(\"Hello, world! {}\", random_number);\n-}\n"
+                },
+                {
+                    "date": 1725984945589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     let input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n-    .read_line(&input)  // อ่านข้อมูลเก็บไว้ใน `input`\n+    .read_line(&mut &input)  // อ่านข้อมูลเก็บไว้ใน `input`\n     .expect(\"Failed to read line\");\n \n \n \n"
+                },
+                {
+                    "date": 1725984954325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     let input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n-    .read_line(&mut &input)  // อ่านข้อมูลเก็บไว้ใน `input`\n+    .read_line( &input)  // อ่านข้อมูลเก็บไว้ใน `input`\n     .expect(\"Failed to read line\");\n \n \n \n"
+                },
+                {
+                    "date": 1725984967950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,13 @@\n \n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n-    let input: String = \"\".to_string();\n+    let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n-    .read_line( &input)  // อ่านข้อมูลเก็บไว้ใน `input`\n+    .read_line(&mut &input)  // อ่านข้อมูลเก็บไว้ใน `input`\n     .expect(\"Failed to read line\");\n \n \n \n"
+                },
+                {
+                    "date": 1725984975578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n-    .read_line(&mut &input)  // อ่านข้อมูลเก็บไว้ใน `input`\n+    .read_line(&mut input)  // อ่านข้อมูลเก็บไว้ใน `input`\n     .expect(\"Failed to read line\");\n \n \n \n"
+                },
+                {
+                    "date": 1725984985669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n     std::io::stdin()\n     .read_line(&mut input)  // อ่านข้อมูลเก็บไว้ใน `input`\n     .expect(\"Failed to read line\");\n \n+    let input = input.trim();\n \n-\n     println!(\"Hello, world! {}\", random_number);\n }\n"
+                },
+                {
+                    "date": 1725985002316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n \n use rand::Rng;\n fn main() {\n-    let random_number: u32 = rand::thread_rng().gen_range(1..101);\n+    //let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n@@ -12,6 +12,6 @@\n     .expect(\"Failed to read line\");\n \n     let input = input.trim();\n \n-    println!(\"Hello, world! {}\", random_number);\n+    println!(\"Hello, world! {}\",input);\n }\n"
+                },
+                {
+                    "date": 1725985032655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n \n use rand::Rng;\n fn main() {\n-    //let random_number: u32 = rand::thread_rng().gen_range(1..101);\n+    let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n"
+                },
+                {
+                    "date": 1725985037826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n \n \n \n-use rand::Rng;\n+//use rand::Rng;\n fn main() {\n-    let random_number: u32 = rand::thread_rng().gen_range(1..101);\n+    //let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n"
+                },
+                {
+                    "date": 1725985046655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n-    .read_line(&mut input)  // อ่านข้อมูลเก็บไว้ใน `input`\n+    .read_line(&mut input)`input`\n     .expect(\"Failed to read line\");\n \n     let input = input.trim();\n \n"
+                },
+                {
+                    "date": 1725985056918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n-    .read_line(&mut input)`input`\n+    .read_line(&mut input)  \n     .expect(\"Failed to read line\");\n \n     let input = input.trim();\n \n"
+                },
+                {
+                    "date": 1725985089629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \n //use rand::Rng;\n fn main() {\n     //let random_number: u32 = rand::thread_rng().gen_range(1..101);\n+    println!(\"Hello, world! {}\",input);\n     let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n"
+                },
+                {
+                    "date": 1725985101285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n //use rand::Rng;\n fn main() {\n     //let random_number: u32 = rand::thread_rng().gen_range(1..101);\n-    println!(\"Hello, world! {}\",input);\n+    println!(\"Guess the number\");\n     let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n"
+                },
+                {
+                    "date": 1725985109018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n \n \n \n-//use rand::Rng;\n+use rand::Rng;\n fn main() {\n     //let random_number: u32 = rand::thread_rng().gen_range(1..101);\n-    println!(\"Guess the number\");\n+    println!(\"Guess the number!\");\n     let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n     std::io::stdin()\n"
+                },
+                {
+                    "date": 1725985115091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n \n use rand::Rng;\n fn main() {\n-    //let random_number: u32 = rand::thread_rng().gen_range(1..101);\n+    let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n     let mut input: String = \"\".to_string();\n     println!(\"Please enter your name:\");\n \n"
+                },
+                {
+                    "date": 1725985139287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n     let mut input: String = \"\".to_string();\n-    println!(\"Please enter your name:\");\n \n     std::io::stdin()\n     .read_line(&mut input)  \n     .expect(\"Failed to read line\");\n"
+                },
+                {
+                    "date": 1725985150838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,10 @@\n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n+\n+    \n     let mut input: String = \"\".to_string();\n \n     std::io::stdin()\n     .read_line(&mut input)  \n"
+                },
+                {
+                    "date": 1725985162138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n \n-    \n+    loop{\n+\n+    };\n     let mut input: String = \"\".to_string();\n \n     std::io::stdin()\n     .read_line(&mut input)  \n"
+                },
+                {
+                    "date": 1725985170365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,13 @@\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n \n     loop{\n-\n+        std::io::stdin()\n+        .read_line(&mut input)  \n+        .expect(\"Failed to read line\");\n+    \n+        let input = input.trim();\n     };\n     let mut input: String = \"\".to_string();\n \n     std::io::stdin()\n@@ -16,6 +20,5 @@\n     .expect(\"Failed to read line\");\n \n     let input = input.trim();\n \n-    println!(\"Hello, world! {}\",input);\n }\n"
+                },
+                {
+                    "date": 1725985179573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,14 @@\n-\n-\n-\n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n \n-    loop{\n+    loop {\n         std::io::stdin()\n-        .read_line(&mut input)  \n-        .expect(\"Failed to read line\");\n+            .read_line(&mut input)\n+            .expect(\"Failed to read line\");\n+\n+        let input = input.trim();\n+    }\n     \n-        let input = input.trim();\n-    };\n-    let mut input: String = \"\".to_string();\n-\n-    std::io::stdin()\n-    .read_line(&mut input)  \n-    .expect(\"Failed to read line\");\n-\n-    let input = input.trim();\n-\n }\n"
+                },
+                {
+                    "date": 1725985186923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n \n     loop {\n+        let mut input: String = \"\".to_string();\n         std::io::stdin()\n             .read_line(&mut input)\n             .expect(\"Failed to read line\");\n \n"
+                },
+                {
+                    "date": 1725985193354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n \n     loop {\n+        println!(\"Guess the number!\");\n         let mut input: String = \"\".to_string();\n         std::io::stdin()\n             .read_line(&mut input)\n             .expect(\"Failed to read line\");\n"
+                },
+                {
+                    "date": 1725985203939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n \n     loop {\n-        println!(\"Guess the number!\");\n+        println!(\"Plea\");\n         let mut input: String = \"\".to_string();\n         std::io::stdin()\n             .read_line(&mut input)\n             .expect(\"Failed to read line\");\n"
+                },
+                {
+                    "date": 1725985212088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n \n     loop {\n-        println!(\"Plea\");\n+        println!(\"Please input your guess\");\n         let mut input: String = \"\".to_string();\n         std::io::stdin()\n             .read_line(&mut input)\n             .expect(\"Failed to read line\");\n"
+                },
+                {
+                    "date": 1725985266673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,14 @@\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n \n     loop {\n-        println!(\"Please input your guess\");\n+        println!(\"Please input your guess.\");\n         let mut input: String = \"\".to_string();\n         std::io::stdin()\n             .read_line(&mut input)\n             .expect(\"Failed to read line\");\n \n-        let input = input.trim();\n+        let guess\n     }\n     \n }\n"
+                },
+                {
+                    "date": 1725985273889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n         std::io::stdin()\n             .read_line(&mut input)\n             .expect(\"Failed to read line\");\n \n-        let guess\n+        let guess:u32 = \n     }\n     \n }\n"
+                },
+                {
+                    "date": 1725985286307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n         std::io::stdin()\n             .read_line(&mut input)\n             .expect(\"Failed to read line\");\n \n-        let guess:u32 = \n+        let guess:u32 = match  { guess\n+            \n+        };\n     }\n     \n }\n"
+                },
+                {
+                    "date": 1725985294394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n     println!(\"Guess the number!\");\n \n     loop {\n         println!(\"Please input your guess.\");\n-        let mut input: String = \"\".to_string();\n+        let mut guess: String = \"\".to_string();\n         std::io::stdin()\n-            .read_line(&mut input)\n+            .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n         let guess:u32 = match  { guess\n             \n"
+                },
+                {
+                    "date": 1725985300503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         std::io::stdin()\n             .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n-        let guess:u32 = match  { guess\n+        let guess:u32 = match  { guess.t\n             \n         };\n     }\n     \n"
+                },
+                {
+                    "date": 1725985310503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         std::io::stdin()\n             .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n-        let guess:u32 = match  { guess.t\n+        let guess:u32 = match  { guess.trim().parse()\n             \n         };\n     }\n     \n"
+                },
+                {
+                    "date": 1725985318337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n         std::io::stdin()\n             .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n-        let guess:u32 = match  { guess.trim().parse()\n+        let guess:u32 = match  { guess.trim().parse(){\n+            Ok(num)\n+        }\n             \n         };\n     }\n     \n"
+                },
+                {
+                    "date": 1725985327614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+use core::num;\n+\n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n     println!(\"Guess the number!\");\n@@ -10,9 +12,9 @@\n             .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n         let guess:u32 = match  { guess.trim().parse(){\n-            Ok(num)\n+            Ok(num) => num\n         }\n             \n         };\n     }\n"
+                },
+                {
+                    "date": 1725985333906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n             .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n         let guess:u32 = match  { guess.trim().parse(){\n-            Ok(num) => num\n+            Ok(num) => num;\n+            Err()\n         }\n             \n         };\n     }\n"
+                },
+                {
+                    "date": 1725985340503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n             .expect(\"Failed to read line\");\n \n         let guess:u32 = match  { guess.trim().parse(){\n             Ok(num) => num;\n-            Err()\n+            Err(_) => \n         }\n             \n         };\n     }\n"
+                },
+                {
+                    "date": 1725985346068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n             .expect(\"Failed to read line\");\n \n         let guess:u32 = match  { guess.trim().parse(){\n             Ok(num) => num;\n-            Err(_) => \n+            Err(_) => continue;\n         }\n             \n         };\n     }\n"
+                },
+                {
+                    "date": 1725985352412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n         let guess:u32 = match  { guess.trim().parse(){\n             Ok(num) => num;\n             Err(_) => continue;\n-        }\n+        };\n             \n         };\n     }\n     \n"
+                },
+                {
+                    "date": 1725985369405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         std::io::stdin()\n             .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n-        let guess:u32 = match  { guess.trim().parse(){\n+        let guess:u32 = match   guess.trim().parse(){\n             Ok(num) => num;\n             Err(_) => continue;\n         };\n             \n"
+                },
+                {
+                    "date": 1725985375277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,13 +11,12 @@\n         std::io::stdin()\n             .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n-        let guess:u32 = match   guess.trim().parse(){\n+        let guess:u32 = match guess.trim().parse(){\n             Ok(num) => num;\n             Err(_) => continue;\n         };\n             \n-        };\n     }\n     \n }\n"
+                },
+                {
+                    "date": 1725985384451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n             Ok(num) => num;\n             Err(_) => continue;\n         };\n             \n-    }\n+    };\n     \n }\n"
+                },
+                {
+                    "date": 1725985398167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,9 @@\n             .expect(\"Failed to read line\");\n \n         let guess:u32 = match guess.trim().parse(){\n             Ok(num) => num;\n-            Err(_) => continue;\n-        };\n-            \n+            Err(_) => continue\n+        };      \n     };\n     \n }\n"
+                },
+                {
+                    "date": 1725985407477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n             .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n         let guess:u32 = match guess.trim().parse(){\n-            Ok(num) => num;\n-            Err(_) => continue\n+            Ok(num:u32) => num,\n+            Err(_) => continue,\n         };      \n     };\n     \n }\n"
+                },
+                {
+                    "date": 1725985437257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,11 @@\n             .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n         let guess:u32 = match guess.trim().parse(){\n-            Ok(num:u32) => num,\n+            Ok(num) => num,\n             Err(_) => continue,\n-        };      \n+        };  \n+            \n     };\n     \n }\n"
+                },
+                {
+                    "date": 1725985445300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n         let guess:u32 = match guess.trim().parse(){\n             Ok(num) => num,\n             Err(_) => continue,\n         };  \n-            \n+\n+        print!()    \n     };\n     \n }\n"
+                },
+                {
+                    "date": 1725985451957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n             Ok(num) => num,\n             Err(_) => continue,\n         };  \n \n-        print!()    \n+        print!(\"You guess\")    \n     };\n     \n }\n"
+                },
+                {
+                    "date": 1725985459907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n             Ok(num) => num,\n             Err(_) => continue,\n         };  \n \n-        print!(\"You guess\")    \n+        print!(\"You guess: {guess}\")    \n     };\n     \n }\n"
+                },
+                {
+                    "date": 1725985465230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n             Ok(num) => num,\n             Err(_) => continue,\n         };  \n \n-        print!(\"You guess: {guess}\")    \n+        print!(\"You guess: {guess}\")\n+            \n     };\n     \n }\n"
+                },
+                {
+                    "date": 1725985474031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,10 @@\n             Err(_) => continue,\n         };  \n \n         print!(\"You guess: {guess}\")\n+        match  gu {\n             \n+        }    \n     };\n     \n }\n"
+                },
+                {
+                    "date": 1725985481786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             Err(_) => continue,\n         };  \n \n         print!(\"You guess: {guess}\")\n-        match  gu {\n+        match  guess.cmpother) {\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985497134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             Err(_) => continue,\n         };  \n \n         print!(\"You guess: {guess}\")\n-        match  guess.cmpother) {\n+        match  guess.cmp(&random_number) {\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985509428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n use core::num;\n+use std::cmp::Ordering;\n \n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..101);\n@@ -18,8 +19,9 @@\n         };  \n \n         print!(\"You guess: {guess}\")\n         match  guess.cmp(&random_number) {\n+            Ordering\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985517330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         };  \n \n         print!(\"You guess: {guess}\")\n         match  guess.cmp(&random_number) {\n-            Ordering\n+            Ordering::Less => print!()\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985522857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         };  \n \n         print!(\"You guess: {guess}\")\n         match  guess.cmp(&random_number) {\n-            Ordering::Less => print!()\n+            Ordering::Less => print!(\"Too small\")\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985549775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,12 @@\n             Ok(num) => num,\n             Err(_) => continue,\n         };  \n \n-        print!(\"You guess: {guess}\")\n+        print!(\"You guess: {guess}\");\n         match  guess.cmp(&random_number) {\n-            Ordering::Less => print!(\"Too small\")\n+            Ordering::Less => print!(\"Too small\"),\n+\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985560525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \n         print!(\"You guess: {guess}\");\n         match  guess.cmp(&random_number) {\n             Ordering::Less => print!(\"Too small\"),\n-\n+            Ordering::Less => print!(\"Too small\"),\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985568517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n \n         print!(\"You guess: {guess}\");\n         match  guess.cmp(&random_number) {\n             Ordering::Less => print!(\"Too small\"),\n+            Ordering::Greater => print!(\"Too small\"),\n             Ordering::Less => print!(\"Too small\"),\n             \n         }    \n     };\n"
+                },
+                {
+                    "date": 1725985581118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n \n         print!(\"You guess: {guess}\");\n         match  guess.cmp(&random_number) {\n             Ordering::Less => print!(\"Too small\"),\n-            Ordering::Greater => print!(\"Too small\"),\n-            Ordering::Less => print!(\"Too small\"),\n+            Ordering::Greater => print!(\"Too Bo\"),\n+            Ordering::Equal => print!(\"Too small\"),\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985589223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n \n         print!(\"You guess: {guess}\");\n         match  guess.cmp(&random_number) {\n             Ordering::Less => print!(\"Too small\"),\n-            Ordering::Greater => print!(\"Too Bo\"),\n-            Ordering::Equal => print!(\"Too small\"),\n+            Ordering::Greater => print!(\"Too Big\"),\n+            Ordering::Equal => {},\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985596266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,10 @@\n         print!(\"You guess: {guess}\");\n         match  guess.cmp(&random_number) {\n             Ordering::Less => print!(\"Too small\"),\n             Ordering::Greater => print!(\"Too Big\"),\n-            Ordering::Equal => {},\n+            Ordering::Equal => { },\n+            Ordering::Equal => {   },\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985604238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,9 @@\n         print!(\"You guess: {guess}\");\n         match  guess.cmp(&random_number) {\n             Ordering::Less => print!(\"Too small\"),\n             Ordering::Greater => print!(\"Too Big\"),\n-            Ordering::Equal => { },\n-            Ordering::Equal => {   },\n+            Ordering::Equal => { print!(\"You win\")  },\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985613156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         print!(\"You guess: {guess}\");\n         match  guess.cmp(&random_number) {\n             Ordering::Less => print!(\"Too small\"),\n             Ordering::Greater => print!(\"Too Big\"),\n-            Ordering::Equal => { print!(\"You win\")  },\n+            Ordering::Equal => { print!(\"You win\"); break; },\n             \n         }    \n     };\n     \n"
+                },
+                {
+                    "date": 1725985626191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-use core::num;\n use std::cmp::Ordering;\n \n use rand::Rng;\n fn main() {\n@@ -12,19 +11,20 @@\n         std::io::stdin()\n             .read_line(&mut guess)\n             .expect(\"Failed to read line\");\n \n-        let guess:u32 = match guess.trim().parse(){\n+        let guess: u32 = match guess.trim().parse() {\n             Ok(num) => num,\n             Err(_) => continue,\n-        };  \n+        };\n \n         print!(\"You guess: {guess}\");\n-        match  guess.cmp(&random_number) {\n+        match guess.cmp(&random_number) {\n             Ordering::Less => print!(\"Too small\"),\n             Ordering::Greater => print!(\"Too Big\"),\n-            Ordering::Equal => { print!(\"You win\"); break; },\n-            \n-        }    \n-    };\n-    \n+            Ordering::Equal => {\n+                print!(\"You win\");\n+                break;\n+            }\n+        }\n+    }\n }\n"
+                },
+                {
+                    "date": 1725985687390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n use std::cmp::Ordering;\n-\n use rand::Rng;\n fn main() {\n-    let random_number: u32 = rand::thread_rng().gen_range(1..101);\n+    let random_number: u32 = rand::thread_rng().gen_range(1..100);\n     println!(\"Guess the number!\");\n \n     loop {\n         println!(\"Please input your guess.\");\n"
+                },
+                {
+                    "date": 1725985692474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..100);\n     println!(\"Guess the number!\");\n-\n+    println!(\"Guess the number!\");\n     loop {\n         println!(\"Please input your guess.\");\n         let mut guess: String = \"\".to_string();\n         std::io::stdin()\n"
+                },
+                {
+                    "date": 1725985698048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..100);\n     println!(\"Guess the number!\");\n-    println!(\"Guess the number!\");\n+    println!(\"Guess the number\");\n     loop {\n         println!(\"Please input your guess.\");\n         let mut guess: String = \"\".to_string();\n         std::io::stdin()\n"
+                },
+                {
+                    "date": 1725985706201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..100);\n     println!(\"Guess the number!\");\n-    println!(\"Guess the number\");\n+    println!(\"{random_number}\");\n     loop {\n         println!(\"Please input your guess.\");\n         let mut guess: String = \"\".to_string();\n         std::io::stdin()\n"
+                },
+                {
+                    "date": 1725985753060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         match guess.cmp(&random_number) {\n             Ordering::Less => print!(\"Too small\"),\n             Ordering::Greater => print!(\"Too Big\"),\n             Ordering::Equal => {\n-                print!(\"You win\");\n+                println!(\"You win\");\n                 break;\n             }\n         }\n     }\n"
+                },
+                {
+                    "date": 1725985759578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n         };\n \n         print!(\"You guess: {guess}\");\n         match guess.cmp(&random_number) {\n-            Ordering::Less => print!(\"Too small\"),\n-            Ordering::Greater => print!(\"Too Big\"),\n+            Ordering::Less => println!(\"Too small\"),\n+            Ordering::Greater => pprintlnint!(\"Too Big\"),\n             Ordering::Equal => {\n                 println!(\"You win\");\n                 break;\n             }\n"
+                },
+                {
+                    "date": 1725985766068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,12 +18,11 @@\n \n         print!(\"You guess: {guess}\");\n         match guess.cmp(&random_number) {\n             Ordering::Less => println!(\"Too small\"),\n-            Ordering::Greater => pprintlnint!(\"Too Big\"),\n+            Ordering::Greater => println!(\"Too Big\"),\n             Ordering::Equal => {\n                 println!(\"You win\");\n-                break;\n-            }\n+                break;println\n         }\n     }\n }\n"
+                },
+                {
+                    "date": 1725985773271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,8 @@\n             Ordering::Greater => println!(\"Too Big\"),\n             Ordering::Equal => {\n                 println!(\"You win\");\n                 break;println\n+            }\n         }\n     }\n }\n"
+                },
+                {
+                    "date": 1725985810521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,15 +15,15 @@\n             Ok(num) => num,\n             Err(_) => continue,\n         };\n \n-        print!(\"You guess: {guess}\");\n+        println!(\"You guess: {guess}\");\n         match guess.cmp(&random_number) {\n             Ordering::Less => println!(\"Too small\"),\n             Ordering::Greater => println!(\"Too Big\"),\n             Ordering::Equal => {\n                 println!(\"You win\");\n-                break;println\n+                break;\n             }\n         }\n     }\n }\n"
+                },
+                {
+                    "date": 1725985837505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n use rand::Rng;\n fn main() {\n     let random_number: u32 = rand::thread_rng().gen_range(1..100);\n     println!(\"Guess the number!\");\n-    println!(\"{random_number}\");\n+    //println!(\"{random_number}\");\n     loop {\n         println!(\"Please input your guess.\");\n         let mut guess: String = \"\".to_string();\n         std::io::stdin()\n"
+                }
+            ],
+            "date": 1725984623734,
+            "name": "Commit-0",
+            "content": "\nfn main() {\n    println!(\"Hello, world!\");\n}\n"
+        }
+    ]
+}
