@@ -8,7 +8,7 @@ use std::cmp::Ordering;
 ```
 คือการเรียก standard library ที่เป็น enum ของ Ordering
 
-cmp ย่อมาจาก comparing แล้วมี จาก pub Ordering ออกมา
+cmp ย่อมาจาก comparing แล้วมีการ pub Ordering ออกมา
 
 ```rust
 impl<T: Ord> Ord for Reverse<T> {
