@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 43,
             "patches": [
                 {
                     "date": 1725985865819,
@@ -28,6 +28,158 @@
                 {
                     "date": 1725985942507,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-# rust-guess-number \\n\r\n-I learn this book's the RUST progamming \r\n+# rust-guess-number\r\n+I learn this book's the RUST progamming language\r\n"
+                },
+                {
+                    "date": 1726068956388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,4 @@\n # rust-guess-number\r\n I learn this book's the RUST progamming language\r\n+ Complete task\r\n+ Incomplete task\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726068964505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n # rust-guess-number\r\n I learn this book's the RUST progamming language\r\n- Complete task\r\n- Incomplete task\n\\ No newline at end of file\n+- [x] Complete task\r\n+- [ ] Incomplete task\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726068971669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n # rust-guess-number\r\n I learn this book's the RUST progamming language\r\n+\r\n - [x] Complete task\r\n - [ ] Incomplete task\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069010425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,10 @@\n # rust-guess-number\r\n I learn this book's the RUST progamming language\r\n \r\n - [x] Complete task\r\n-- [ ] Incomplete task\n\\ No newline at end of file\n+- [ ] Incomplete task\r\n+\r\n+```python\r\n+def area(w, h):\r\n+    return w * h\r\n+```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069070998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n \r\n - [x] Complete task\r\n - [ ] Incomplete task\r\n \r\n-```python\r\n-def area(w, h):\r\n-    return w * h\r\n+```rust\r\n+use std::cmp::Ordering;\r\n+\r\n ```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069080385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n - [ ] Incomplete task\r\n \r\n ```rust\r\n use std::cmp::Ordering;\r\n-\r\n-```\n\\ No newline at end of file\n+```\r\n+คือก่ี \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069086623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n ```rust\r\n use std::cmp::Ordering;\r\n ```\r\n-คือก่ี \n\\ No newline at end of file\n+คือการเรียก st\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069095010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n ```rust\r\n use std::cmp::Ordering;\r\n ```\r\n-คือการเรียก st\n\\ No newline at end of file\n+คือการเรียก standard library\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069101851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n ```rust\r\n use std::cmp::Ordering;\r\n ```\r\n-คือการเรียก standard library\n\\ No newline at end of file\n+คือการเรียก standard library \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069107976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n ```rust\r\n use std::cmp::Ordering;\r\n ```\r\n-คือการเรียก standard library \n\\ No newline at end of file\n+คือการเรียก standard library ที่เป็น e\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069142573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n ```rust\r\n use std::cmp::Ordering;\r\n ```\r\n-คือการเรียก standard library ที่เป็น e\n\\ No newline at end of file\n+คือการเรียก standard library ที่เป็น enum ของ \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069149279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n ```rust\r\n use std::cmp::Ordering;\r\n ```\r\n-คือการเรียก standard library ที่เป็น enum ของ \n\\ No newline at end of file\n+คือการเรียก standard library ที่เป็น enum ของ Ordering\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069156724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,7 @@\n \r\n ```rust\r\n use std::cmp::Ordering;\r\n ```\r\n-คือการเรียก standard library ที่เป็น enum ของ Ordering\n\\ No newline at end of file\n+คือการเรียก standard library ที่เป็น enum ของ Ordering\r\n+\r\n+cmp ย่อมาจาก comparing\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069168444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,5 @@\n use std::cmp::Ordering;\r\n ```\r\n คือการเรียก standard library ที่เป็น enum ของ Ordering\r\n \r\n-cmp ย่อมาจาก comparing\n\\ No newline at end of file\n+cmp ย่อมาจาก comparing แล้วมี sta\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069193356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,5 @@\n use std::cmp::Ordering;\r\n ```\r\n คือการเรียก standard library ที่เป็น enum ของ Ordering\r\n \r\n-cmp ย่อมาจาก comparing แล้วมี sta\n\\ No newline at end of file\n+cmp ย่อมาจาก comparing แล้วมี \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069280603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,5 @@\n use std::cmp::Ordering;\r\n ```\r\n คือการเรียก standard library ที่เป็น enum ของ Ordering\r\n \r\n-cmp ย่อมาจาก comparing แล้วมี \n\\ No newline at end of file\n+cmp ย่อมาจาก comparing แล้วมี จาก pub \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069290326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,5 @@\n use std::cmp::Ordering;\r\n ```\r\n คือการเรียก standard library ที่เป็น enum ของ Ordering\r\n \r\n-cmp ย่อมาจาก comparing แล้วมี จาก pub \n\\ No newline at end of file\n+cmp ย่อมาจาก comparing แล้วมี จาก pub Ordering ออกมา\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069395564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n use std::cmp::Ordering;\r\n ```\r\n คือการเรียก standard library ที่เป็น enum ของ Ordering\r\n \r\n-cmp ย่อมาจาก comparing แล้วมี จาก pub Ordering ออกมา\n\\ No newline at end of file\n+cmp ย่อมาจาก comparing แล้วมี จาก pub Ordering ออกมา\r\n+\r\n"
+                },
+                {
+                    "date": 1726069402458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,11 @@\n ```\r\n คือการเรียก standard library ที่เป็น enum ของ Ordering\r\n \r\n cmp ย่อมาจาก comparing แล้วมี จาก pub Ordering ออกมา\r\n-\r\n+```rust\r\n+impl<T: Ord> Ord for Reverse<T> {\r\n+    #[inline]\r\n+    fn cmp(&self, other: &Reverse<T>) -> Ordering {\r\n+        other.0.cmp(&self.0)\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069409378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,14 @@\n ```\r\n คือการเรียก standard library ที่เป็น enum ของ Ordering\r\n \r\n cmp ย่อมาจาก comparing แล้วมี จาก pub Ordering ออกมา\r\n+\r\n ```rust\r\n impl<T: Ord> Ord for Reverse<T> {\r\n     #[inline]\r\n     fn cmp(&self, other: &Reverse<T>) -> Ordering {\r\n         other.0.cmp(&self.0)\r\n     }\r\n\\ No newline at end of file\n-}\n+}\r\n+\r\n+```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069450241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n # rust-guess-number\r\n I learn this book's the RUST progamming language\r\n \r\n - [x] Complete task\r\n-- [ ] Incomplete task\r\n \r\n+\r\n ```rust\r\n use std::cmp::Ordering;\r\n ```\r\n คือการเรียก standard library ที่เป็น enum ของ Ordering\r\n"
+                },
+                {
+                    "date": 1726069455732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n # rust-guess-number\r\n I learn this book's the RUST progamming language\r\n \r\n-- [x] Complete task\r\n+- [x] ส่วน\r\n \r\n-\r\n ```rust\r\n use std::cmp::Ordering;\r\n ```\r\n คือการเรียก standard library ที่เป็น enum ของ Ordering\r\n"
+                },
+                {
+                    "date": 1726069461760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n # rust-guess-number\r\n I learn this book's the RUST progamming language\r\n \r\n-- [x] ส่วน\r\n+- [x] ส่วนของ comparing\r\n \r\n ```rust\r\n use std::cmp::Ordering;\r\n ```\r\n"
+                },
+                {
+                    "date": 1726069479909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,8 @@\n         other.0.cmp(&self.0)\r\n     }\r\n }\r\n \r\n-```\n\\ No newline at end of file\n+```\r\n+\r\n+\r\n+- [x] ส่วนของ comparing\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069487598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,5 @@\n }\r\n \r\n ```\r\n \r\n-\r\n-- [x] ส่วนของ comparing\n\\ No newline at end of file\n+- [x] ส่วนของ input\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069501431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,8 @@\n }\r\n \r\n ```\r\n \r\n-- [x] ส่วนของ input\n\\ No newline at end of file\n+- [x] ส่วนของ input/output\r\n+  \r\n+```rust\r\n+\r\n"
+                },
+                {
+                    "date": 1726069508052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,4 +23,5 @@\n - [x] ส่วนของ input/output\r\n   \r\n ```rust\r\n \r\n+```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069535399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,10 @@\n \r\n ```\r\n \r\n - [x] ส่วนของ input/output\r\n+\r\n+IO มาจาก input นีะ\r\n   \r\n ```rust\r\n \r\n ```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069540764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n ```\r\n \r\n - [x] ส่วนของ input/output\r\n \r\n-IO มาจาก input นีะ\r\n+IO มาจาก input output\r\n   \r\n ```rust\r\n \r\n ```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069546559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,6 +24,6 @@\n \r\n IO มาจาก input output\r\n   \r\n ```rust\r\n-\r\n+std::io::stdin()\r\n ```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069551857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,8 @@\n \r\n - [x] ส่วนของ input/output\r\n \r\n IO มาจาก input output\r\n-  \r\n+แปลว่าการจะ\r\n ```rust\r\n std::io::stdin()\r\n ```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069567955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,8 @@\n \r\n - [x] ส่วนของ input/output\r\n \r\n IO มาจาก input output\r\n-แปลว่าการจะ\r\n+แปลว่าการจะใช้การป้อนข้อมูลใน command line จะต้อง\r\n ```rust\r\n std::io::stdin()\r\n ```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069666693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n \r\n - [x] ส่วนของ input/output\r\n \r\n IO มาจาก input output\r\n-แปลว่าการจะใช้การป้อนข้อมูลใน command line จะต้อง\r\n+แปลว่าการจะใช้การป้อนข้อมูลใน command line จะต้องใช้ตัวนี้\r\n ```rust\r\n std::io::stdin()\r\n\\ No newline at end of file\n-```\n+```\r\n+เพื่ออ่านข้อมูลจากอินพุต \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069674939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,5 @@\n แปลว่าการจะใช้การป้อนข้อมูลใน command line จะต้องใช้ตัวนี้\r\n ```rust\r\n std::io::stdin()\r\n ```\r\n-เพื่ออ่านข้อมูลจากอินพุต \n\\ No newline at end of file\n+เพื่ออ่านข้อมูลจากinput \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069681460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,8 @@\n \r\n IO มาจาก input output\r\n แปลว่าการจะใช้การป้อนข้อมูลใน command line จะต้องใช้ตัวนี้\r\n ```rust\r\n-std::io::stdin()\r\n+std::io::stdin()            .read_line(&mut guess)\r\n+            .expect(\"Failed to read line\");\r\n ```\r\n เพื่ออ่านข้อมูลจากinput \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069701857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n \r\n IO มาจาก input output\r\n แปลว่าการจะใช้การป้อนข้อมูลใน command line จะต้องใช้ตัวนี้\r\n ```rust\r\n-std::io::stdin()            .read_line(&mut guess)\r\n+       std::io::stdin()\r\n+            .read_line(&mut guess)\r\n             .expect(\"Failed to read line\");\r\n\\ No newline at end of file\n ```\r\n-เพื่ออ่านข้อมูลจากinput \n+read_lineอ่านข้อมูลจากinput \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726069752712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,5 +28,6 @@\n        std::io::stdin()\r\n             .read_line(&mut guess)\r\n             .expect(\"Failed to read line\");\r\n ```\r\n-read_line คือการอ่านข้อมูลจากinput \n\\ No newline at end of file\n+read_line คือการอ่านข้อมูลจากinput\r\n+expect ถ้ามี \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726070036769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,5 @@\n expect ถ้ามีค่าที่ผิดพลาดจะหยุดการทำงานของ program \r\n \r\n มาถึงตรงนี้ผมก็งงว่า & และ mut มันมืออะไร ใน rust โดยเริ่มต้นค่าต่างจะเปลี่ยนไม่ได้ถ้าจะกำหนดค่าตัวนั้นได้ในภายหลังต้องกำลังตัวแปลนั้นเป็น mut ส่วน & ยังไม่เข้าใจดีนักเลยสอบถาม GPT ก็ได้มาว่า\r\n \r\n-````\n\\ No newline at end of file\n+````\r\n"
                 }
             ],
             "date": 1725985865819,
